@@ -132,7 +132,7 @@ defmodule Numbers do
   end
 
   koan "Is this a range?" do
-    assert Range.range?(1..10) == false
-    assert Range.range?(0) == true
+    assert Range.range?(1..10) == true
+    assert Range.range?(0) == false
   end
 end
